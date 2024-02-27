@@ -1,0 +1,16 @@
+<div>
+  <h2>Order Details</h2>
+  <div>
+    <label>Order Name:</label>
+    <input type="text" [(ngModel)]="form.data.orderName" >
+  </div>
+  <div>
+    <h1 *ngIf="form.message != null">{{form.message}}</h1>
+    <label>Order Amount:</label>
+    <input type="text" [(ngModel)]="form.data.price" >
+  </div>
+ 
+  <div>
+    <button (click)="save()">Save</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<table border="black" align="center" >
+<tr>
+  <th>{{'OrderName'}}</th>
+
+  <th>{{'price'}}</th>
+  <th>{{'edit'}}</th>
+</tr>
+<tr *ngFor="let m of form.list;">
+  <td>{{m.orderName}}</td>
+  <td>{{m.price}}</td>
+  <td><button (click)="forward('/order/'+m.id)">edit</button></td>
+</tr>
+</table>
